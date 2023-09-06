@@ -15,7 +15,7 @@ public class MedicineServiceImpl implements MedicineService {
 		if(names!=null && !names.isEmpty() && names.length()>=3 && names.length()>=0)
 		{
 			System.out.println("Medicine names is valid..");
-			this.medicine.list(names);
+			this.medicine.cure(names);
 		}
 		else
 		{

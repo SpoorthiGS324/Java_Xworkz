@@ -16,7 +16,7 @@ public class ArtistServiceImpl implements ArtistService {
 	if(paintingName!=null && !paintingName.isEmpty() && paintingName.length()>=0 && paintingName.length()>=3 )
 	{
 		System.out.println("Artist names is valid..");
-		this.artistRepository.list(paintingName);
+		this.artistRepository.paint(paintingName);
 	}
 	else {
 		System.out.println("Artist names is invalid,cannot save");

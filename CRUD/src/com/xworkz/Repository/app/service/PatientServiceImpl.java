@@ -14,7 +14,7 @@ public class PatientServiceImpl implements PatientService {
 		if(names!=null && !names.isEmpty() && names.length()>=3 && names.length()>=0)
 		{
 			System.out.println("Patient names is valid..");
-			this.patient.care(names);
+			this.patient.sleep(names);
 		}
 		else
 		{

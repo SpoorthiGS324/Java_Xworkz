@@ -13,10 +13,10 @@ public class PoliticanServiceImpl implements PoliticanRepository {
 	@Override
 	public void help(String designation) {
 		System.out.println("invoking validate and save "+this.getClass().getSimpleName());
-		if(names!=null && !names.isEmpty() && names.length()>=3 && names.length()>=0)
+		if(designation!=null && !designation.isEmpty() && designation.length()>=3 && designation.length()>=0)
 		{
 			System.out.println("Politician names is valid..");
-			this.politicanRepository.list(names);
+			this.politicanRepository.help(designation);
 		}
 		else
 		{

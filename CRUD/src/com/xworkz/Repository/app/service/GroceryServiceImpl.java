@@ -16,7 +16,7 @@ public class GroceryServiceImpl implements GroceryService {
 		if(grocery!=null && !grocery.isEmpty() && grocery.length()>=0 && grocery.length()>=3)
 		{
 			System.out.println("Grocery data is valid");
-			this.groceryRepository.save(grocery);
+			this.goceryRepository.save(grocery);
 		}
 		else
 		{

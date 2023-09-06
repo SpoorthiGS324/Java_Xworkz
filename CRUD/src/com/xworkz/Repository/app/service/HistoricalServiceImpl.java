@@ -16,7 +16,7 @@ public class HistoricalServiceImpl implements HistoricalService {
 		if(names!=null && !names.isEmpty() && names.length()>=3 && names.length()>=0)
 		{
 			System.out.println("Historical Places names is valid..");
-			this.historicalRepo.venue(names);
+			this.historicalRepo.view(names);
 		}
 		else
 		{

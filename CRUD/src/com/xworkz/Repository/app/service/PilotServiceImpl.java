@@ -16,7 +16,7 @@ public class PilotServiceImpl implements PilotService {
 		if(names!=null && !names.isEmpty() && names.length()>=3 && names.length()>=0)
 		{
 			System.out.println("Pilot names is valid..");
-			this.pilot.list(names);
+			this.pilot.fly(names);
 		}
 		else
 		{

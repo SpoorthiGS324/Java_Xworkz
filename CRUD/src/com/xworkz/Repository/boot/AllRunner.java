@@ -96,19 +96,19 @@ public class AllRunner {
 
 			Medicine medicine=new MedicineImpl();
 
-			MedicineService medicine=new MedicineServiceImpl(medicine); 
-			medicine.list("Naproxen");
-			medicine.list("Aspirin");
-			medicine.list("Diazepen");
-			medicine.list("Ativan");
-			medicine.list("Dolo-650");
-			medicine.list("Lisinopril");
-			medicine.list("Dexamenthose");
-			medicine.list("Atvin");
-			medicine.list("Doxycycline");
-			medicine.list("");
-			medicine.list("Naproxen");
-			medicine.list("Abacavir");
+			MedicineService medicine1=new MedicineServiceImpl(medicine); 
+			medicine1.list("Naproxen");
+			medicine1.list("Aspirin");
+			medicine1.list("Diazepen");
+			medicine1.list("Ativan");
+			medicine1.list("Dolo-650");
+			medicine1.list("Lisinopril");
+			medicine1.list("Dexamenthose");
+			medicine1.list("Atvin");
+			medicine1.list("Doxycycline");
+			medicine1.list("");
+			medicine1.list("Naproxen");
+			medicine1.list("Abacavir");
 
 			System.out.println("\n");
 			System.out.println("-------------------PATIENT-------------------");
@@ -118,7 +118,7 @@ public class AllRunner {
 
 			Patient patientRepository=new PatientImpl();
 
-			PatientService patient=new PatientServiceImpl(patient);
+			PatientService patient=new PatientServiceImpl(patientRepository);
 			patient.care("Harshith Kumar");
 			patient.care("Jeevan K");
 			patient.care("Sagar K");
@@ -137,9 +137,9 @@ public class AllRunner {
 			System.out.println("\n");
 
 
-			PoliticanRepository politicianRepository=new PoliticanRepositoryImpl();
+			PoliticanRepository politicanRepository=new PoliticanRepositoryImpl();
 
-			PoliticanService politician=new PoliticanServiceImpl(politicanRepository);
+			PoliticanService politician= (PoliticanService) new PoliticanServiceImpl(politicanRepository);
 			politician.list("Narendra Modi");
 			politician.list("B S Y");
 			politician.list("Halappa Achar");
@@ -157,9 +157,9 @@ public class AllRunner {
 			System.out.println("-------------------PILOT-SERVICE-------------------");
 			System.out.println("\n");
 
-			Pilot pilot=new PilotImpl();
+			Pilot pilot1=new PilotImpl();
 
-			PilotService pilot=new PilotServiceImpl(pilot);
+			PilotService pilot=new PilotServiceImpl(pilot1);
 
 			pilot.list("Ajay");
 			pilot.list("Suhas Biswas");
