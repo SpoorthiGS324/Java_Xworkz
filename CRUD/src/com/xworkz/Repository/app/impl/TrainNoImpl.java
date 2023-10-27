@@ -28,7 +28,7 @@ public class TrainNoImpl implements TrainNo {
 		for(int index=0;index<=this.position;index++)
 		{
 			String temp=this.trains[index];
-			if(temp!=null && temp.equals(trains))
+			if(temp!=null && temp.equals(name))
 			{
 				System.out.println("juice already exits");
 				return true;

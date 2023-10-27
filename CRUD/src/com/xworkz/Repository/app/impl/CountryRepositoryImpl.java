@@ -28,7 +28,7 @@ public class CountryRepositoryImpl implements CountryRepository {
 		for(int index=0;index<=this.position;index++)
 		{
 			String temp=this.countries[index];
-			if(temp!=null && temp.equals(countries))
+			if(temp!=null && temp.equals(name))
 			{
 				System.out.println("juice already exits");
 				return true;

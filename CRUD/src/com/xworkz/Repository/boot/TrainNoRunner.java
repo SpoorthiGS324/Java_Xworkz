@@ -9,11 +9,10 @@ public class TrainNoRunner {
 
 	public static void main(String[] args) {
 
-		
 		TrainNo trainNo = new TrainNoImpl();
-		
+
 		TrainNoService trainNoService = new TrainNoServiceImpl(trainNo);
-		
+
 		trainNoService.validateAndSave("12627");
 		trainNoService.validateAndSave("12604");
 	}

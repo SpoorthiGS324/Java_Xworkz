@@ -4,7 +4,7 @@ public class SportsKiller {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Running main in SportsRunner");
+		System.out.println("Running main in SportKiller");
 		String name="Cricket";
 		
 		Floor floor=new Floor("Ground Floor",0);

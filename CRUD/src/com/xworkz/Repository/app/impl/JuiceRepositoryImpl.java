@@ -27,7 +27,7 @@ public class JuiceRepositoryImpl implements JuiceRepository {
 		for(int index=0;index<=this.position;index++)
 		{
 			String temp=this.juices[index];
-			if(temp!=null && temp.equals(juices))
+			if(temp!=null && temp.equals(name))
 			{
 				System.out.println("juice already exits");
 				return true;

@@ -26,7 +26,7 @@ public class LocationRepositoryImpl implements LocationRepository {
 		for(int index=0;index<=this.position;index++)
 		{
 			String temp=this.locations[index];
-			if(temp!=null && temp.equals(locations))
+			if(temp!=null && temp.equals(name))
 			{
 				System.out.println("juice already exits");
 				return true;

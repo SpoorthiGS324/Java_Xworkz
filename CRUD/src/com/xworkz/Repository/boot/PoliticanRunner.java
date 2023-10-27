@@ -18,7 +18,7 @@ public class PoliticanRunner {
 		ref.help("assistent");
 		ref.help("judge");
 		ref.help("permanent chairman");
-		
+
 	}
 
 }

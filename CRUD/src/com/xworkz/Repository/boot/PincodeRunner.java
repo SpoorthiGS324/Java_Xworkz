@@ -9,11 +9,10 @@ public class PincodeRunner {
 
 	public static void main(String[] args) {
 
-		
 		Pincode pincode = new PincodeImpl();
-		
+
 		PincodeService pincodeService = new PincodeServiceImpl(pincode);
-		
+
 		pincodeService.validateAndSave(577301);
 		pincodeService.validateAndSave(577302);
 	}

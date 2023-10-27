@@ -8,17 +8,14 @@ import com.xworkz.Repository.app.service.JuiceServiceImpl;
 public class JuiceRunner {
 
 	public static void main(String[] args) {
-		
+
 		JuiceRepository juiceRepository = new JuiceRepositoryImpl();
-		
+
 		JuiceService juiceService = new JuiceServiceImpl(juiceRepository);
-		
+
 		juiceService.validateAndSave("apple juice");
 		juiceService.validateAndSave("slice");
 
-		
 	}
 
 }
-
-
